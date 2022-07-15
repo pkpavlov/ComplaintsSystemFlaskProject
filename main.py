@@ -11,8 +11,8 @@ app.config.from_object("config.DevelopmentConfig")
 api = Api(app)
 migrate = Migrate(app, db)
 
-[api.add_resource(*route_data)for route_data in routes]
+[api.add_resource(*route_data) for route_data in routes]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run()

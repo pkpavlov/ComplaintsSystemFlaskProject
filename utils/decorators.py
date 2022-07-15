@@ -11,5 +11,7 @@ def validate_schema(schema_name):
             if not errors:
                 return func(*args, **kwargs)
             raise BadRequest(errors)
+
         return wrapper
+
     return decorated_function

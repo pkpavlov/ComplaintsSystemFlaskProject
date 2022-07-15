@@ -11,4 +11,3 @@ class ComplaintState(Enum):
     pending = "Pending"
     approved = "Approved"
     rejected = "Rejected"
-
