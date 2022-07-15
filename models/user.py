@@ -14,19 +14,19 @@ class BaseUserModel(db.Model):
 
 
 class ComplainerModel(BaseUserModel):
-    __tablename__ = 'complainers'
+    __tablename__ = "complainers"
 
-    complaints = db.relationship("ComplaintModel", backref="complaint", lazy='dynamic')
+    complaints = db.relationship("ComplaintModel", backref="complaint", lazy="dynamic")
     role = db.Column(db.Enum(UserRole), default=UserRole.complainer, nullable=False)
 
 
 class ApproverModel(BaseUserModel):
-    __tablename__ = 'approvers'
+    __tablename__ = "approvers"
 
     role = db.Column(db.Enum(UserRole), default=UserRole.approver, nullable=False)
 
 
 class AdminModel(BaseUserModel):
-    __tablename__ = 'admins'
+    __tablename__ = "admins"
 
     role = db.Column(db.Enum(UserRole), default=UserRole.admin, nullable=False)

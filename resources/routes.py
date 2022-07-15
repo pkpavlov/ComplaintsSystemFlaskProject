@@ -1,5 +1,9 @@
 from resources.auth import RegisterResource, LoginResource
-from resources.complaint import ComplaintsResource, ApproveComplaintResource, RejectComplaintResource
+from resources.complaint import (
+    ComplaintsResource,
+    ApproveComplaintResource,
+    RejectComplaintResource,
+)
 
 routes = (
     (RegisterResource, "/register/"),
