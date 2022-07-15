@@ -9,5 +9,5 @@ class UserRole(Enum):
 
 class ComplaintState(Enum):
     pending = "Pending"
-    approved = "Approved"
+    approved =  "Approved"
     rejected = "Rejected"
