@@ -70,6 +70,8 @@ class WiseService:
         resp = requests.put(url, headers=self.headers)
         return resp.json()
 
+
+
 if __name__ == "__main__":
     wise = WiseService()
     quote_id = wise.create_quote("EUR", "EUR", 30)
